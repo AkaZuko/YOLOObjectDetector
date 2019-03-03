@@ -13,8 +13,8 @@ logging.basicConfig(format='%(asctime)s %(levelname)s:%(message)s', level=loggin
 
 LOGGER = logging.getLogger(__file__)
 MODEL_NAME = 'ssd_mobilenet_v1_coco_2017_11_17'
-PATH_TO_FROZEN_GRAPH = os.path.join(os.path.pardir, os.path.pardir, 'models', MODEL_NAME, 'frozen_inference_graph.pb')
-PATH_TO_LABELS = os.path.join(os.path.pardir, os.path.pardir, 'data', 'mscoco_label_map.pbtxt')
+PATH_TO_FROZEN_GRAPH = os.path.join(top, os.path.pardir, os.path.pardir, 'models', MODEL_NAME, 'frozen_inference_graph.pb')
+PATH_TO_LABELS = os.path.join(top, os.path.pardir, os.path.pardir, 'data', 'mscoco_label_map.pbtxt')
 
 SHOW_DETECTION = True
 
